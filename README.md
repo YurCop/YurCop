@@ -2,12 +2,12 @@
 <div align="center">
   <img 
     width="100%" 
-    src="imagine1.gif"
+    src="imagine.gif"
   />
 </div>
 
 <p align="center">
-  <img src="ryumaldito.gif" alt="Ryu Maldito" width="400"/>
+  <img src="imagine.gif" alt="YurCop" width="400"/>
 </p>
 
 <h1 align="center">
