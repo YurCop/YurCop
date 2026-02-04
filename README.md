@@ -37,8 +37,9 @@ Atualmente, minha biblioteca conta com poucos projetos personalizados. Você pod
 ---
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YurCop&show_icons=true&theme=transparent&hide_border=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YurCop&layout=compact&theme=transparent&hide_border=true&title_color=ffffff&text_color=ffffff" height="150" />
+  <img src="https://github-readme-stats.vercel.app/api?username=YurCop&show_icons=true&theme=dark&hide_border=true&title_color=ffffff&text_color=ffffff&icon_color=ffffff&bg_color=050505" height="150" alt="Estatísticas do GitHub" />
+  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YurCop&layout=compact&theme=dark&hide_border=true&title_color=ffffff&text_color=ffffff&bg_color=050505" height="150" alt="Linguagens mais usadas" />
 </div>
 
 <br>
