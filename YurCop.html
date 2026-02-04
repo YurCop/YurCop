@@ -407,7 +407,11 @@
                 <div class="bar"></div>
             </div>
         </div>
-        <button class="play-btn" id="playBtn">⏵</button>
+        <button class="play-btn" id="playBtn">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M8 5v14l11-7z"/>
+    </svg>
+</button>
     </div>
 
     <audio id="audio" crossorigin="anonymous"></audio>
@@ -485,10 +489,10 @@
 
             if (audio.paused) {
                 audio.play().catch(e => console.log("Erro ao tocar:", e));
-                playBtn.textContent = '⏸';
+                playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
             } else {
                 audio.pause();
-                playBtn.textContent = '⏵';
+                playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
             }
         });
 
@@ -533,13 +537,13 @@
 
             if (playPromise !== undefined) {
                 playPromise.then(_ => {
-                    playBtn.textContent = '⏸';
+                    playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
                 }).catch(error => {
                     console.log("Autoplay aguardando interação do usuário.");
                     document.body.addEventListener('click', () => {
                         if (audio.paused) {
                             audio.play();
-                            playBtn.textContent = '⏸';
+                            playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
                         }
                     }, { once: true });
                 });
@@ -584,42 +588,6 @@
 
         animate();
     }
-</script>
-
-    <script>
-
-    document.addEventListener('contextmenu', event => event.preventDefault());
-
-
-    document.onkeydown = function (e) {
-
-        if (e.keyCode == 123) {
-            return false;
-        }
-
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-            return false;
-        }
-
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-            return false;
-        }
-
-        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-            return false;
-        }
-
-        if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
-            return false;
-        }
-    };
-
-    setInterval(function() {
-        if (window.outerWidth - window.innerWidth > 160 || window.outerHeight - window.innerHeight > 160) {
-            
-            document.body.innerHTML = "Acesso negado para inspeção.";
-        }
-    }, 1000);
 </script>
 </body>
 
