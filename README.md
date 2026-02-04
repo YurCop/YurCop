@@ -16,10 +16,6 @@
 ## 👤 Sobre Mim
 > Sou um desenvolvedor focado na criação de **soluções digitais modernas e escaláveis**. Minha paixão é unir performance e design para entregar projetos que realmente fazem a diferença.
 
-* 🌍 Baseado no Brasil.
-* 💻 Especialista em **automação e interfaces modernas**.
-* 🚀 Sempre evoluindo e estudando novas tecnologias.
-
 ---
 
 ## 🛠️ Skills 
